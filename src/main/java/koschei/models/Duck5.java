@@ -1,8 +1,5 @@
 package koschei.models;
 
-import org.springframework.stereotype.Component;
-
-
 public class Duck5 {
 
     @Override
@@ -10,7 +7,7 @@ public class Duck5 {
         return ", в утке яйцо " + egg.toString();
     }
 
-    private Egg6 egg;
+    private final Egg6 egg;
 
     public Duck5(Egg6 egg) {
         this.egg = egg;
